@@ -1,23 +1,35 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #f0f0f0, #eaeaea);
     color: #333;
     line-height: 1.6;
     scroll-behavior: smooth;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: #f9f9f9;
 }
 
 /* Header and Navigation */
 header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(200, 200, 200, 0.2);
     padding: 1em 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+header:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -36,216 +48,127 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    background: linear-gradient(145deg, #f953c6, #b91d73);
-    color: #fff;
-    padding: 4em 1em;
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    padding: 5em 1em;
+    border-radius: 40px;
     margin: 2em auto;
     width: 90%;
     max-width: 1200px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-out;
 }
 
 .hero h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 0.5em;
-    animation: fadeInDown 1s ease-out;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 1.5em;
-    animation: fadeInUp 1s ease-out;
 }
 
 .hero .button {
-    background: #ffcc00;
-    color: #6a11cb;
-    padding: 0.8em 1.5em;
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    color: #fff;
+    padding: 1em 2em;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 50px;
     font-weight: bold;
-    transition: background 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .hero .button:hover {
-    background: #333;
-    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Pricing Section */
-.pricing {
+/* Glassmorphic Section */
+.glass-section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    padding: 4em 2em;
+    margin: 2em auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.glass-section h2 {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #6a11cb;
+}
+
+/* Cards */
+.card-container {
     display: flex;
     gap: 2em;
-    justify-content: center;
     flex-wrap: wrap;
-}
-
-.pricing-card {
-    background: #fff;
-    padding: 2em;
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: calc(33% - 2em);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.pricing-card:hover {
-    transform: scale(1.05);
-}
-
-.pricing-card h3 {
-    font-size: 1.5em;
-    color: #6a11cb;
-    margin-bottom: 1em;
-}
-
-.pricing-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 1em;
-}
-
-.pricing-card ul li {
-    margin-bottom: 0.5em;
-}
-
-.pricing-card .price {
-    font-size: 2em;
-    color: #b91d73;
-    margin-bottom: 1em;
-}
-
-.pricing-card .button {
-    padding: 0.8em 1.5em;
-    background: #2575fc;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background 0.3s;
-}
-
-.pricing-card .button:hover {
-    background: #6a11cb;
-}
-
-/* Testimonials Section */
-.testimonials {
-    padding: 4em 1em;
-    background: #f1f1f1;
-    text-align: center;
-    border-radius: 20px;
-    margin: 2em auto;
-    width: 90%;
-    max-width: 1200px;
-}
-
-.testimonials h2 {
-    margin-bottom: 1em;
-    font-size: 2em;
-    color: #6a11cb;
-}
-
-.testimonials .testimonial {
-    margin: 1em 0;
-    padding: 1em;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonials .testimonial p {
-    font-size: 1.1em;
-}
-
-.testimonials .testimonial .author {
-    margin-top: 0.5em;
-    font-weight: bold;
-    color: #2575fc;
-}
-
-/* Newsletter Section */
-.newsletter {
-    padding: 2em;
-    background: linear-gradient(135deg, #2575fc, #6a11cb);
-    color: #fff;
-    text-align: center;
-    border-radius: 20px;
-    margin: 2em auto;
-    width: 90%;
-    max-width: 1200px;
-}
-
-.newsletter h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-.newsletter form {
-    display: flex;
     justify-content: center;
-    gap: 1em;
 }
 
-.newsletter input {
-    padding: 0.8em;
-    border: none;
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(200, 200, 200, 0.2);
     border-radius: 20px;
-    flex: 1;
+    padding: 2em;
+    width: calc(33% - 2em);
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.newsletter button {
-    padding: 0.8em 1.5em;
-    background: #ffcc00;
-    color: #6a11cb;
-    border: none;
-    border-radius: 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background 0.3s;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.newsletter button:hover {
-    background: #333;
+.card h3 {
+    font-size: 1.8em;
+    color: #2575fc;
+    margin-bottom: 1em;
+}
+
+.card p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: #fff;
+    margin-top: 2em;
+    border-radius: 40px 40px 0 0;
 }
 
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 
