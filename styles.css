@@ -86,152 +86,185 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Pricing Section */
-.pricing {
+/* Why Choose Us Section */
+.why-choose-us {
     display: flex;
-    gap: 2em;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 2em;
+    justify-content: center;
+    padding: 4em 1em;
+    background-color: #fff;
+    margin-top: 3em;
 }
 
-.pricing-card {
-    background: #fff;
-    padding: 2em;
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: calc(33% - 2em);
+.why-choose-us h2 {
+    font-size: 2.5em;
+    color: #6a11cb;
     text-align: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.why-choose-us .feature {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 2em;
+    width: calc(33% - 2em);
+    margin: 1em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    text-align: center;
 }
 
-.pricing-card:hover {
-    transform: scale(1.05);
+.why-choose-us .feature:hover {
+    transform: translateY(-10px);
 }
 
-.pricing-card h3 {
+.why-choose-us .feature i {
+    font-size: 3em;
+    color: #2575fc;
+    margin-bottom: 1em;
+}
+
+.why-choose-us .feature h3 {
     font-size: 1.8em;
     color: #6a11cb;
     margin-bottom: 1em;
 }
 
-.pricing-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 1em;
-}
-
-.pricing-card ul li {
-    margin-bottom: 0.5em;
+.why-choose-us .feature p {
     font-size: 1.1em;
+    color: #333;
 }
 
-.pricing-card .price {
-    font-size: 2.5em;
-    color: #b91d73;
-    margin-bottom: 1em;
-}
-
-.pricing-card .button {
-    padding: 0.8em 1.5em;
-    background: #2575fc;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background 0.3s;
-}
-
-.pricing-card .button:hover {
-    background: #6a11cb;
-}
-
-/* Testimonials Section */
-.testimonials {
+/* Services Section */
+.services {
     padding: 4em 1em;
     background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: #fff;
     text-align: center;
     border-radius: 20px;
-    margin: 2em auto;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 3em;
 }
 
-.testimonials h2 {
+.services h2 {
+    margin-bottom: 2em;
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+.services .service-card {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    width: calc(33% - 2em);
+    margin: 1em;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.services .service-card:hover {
+    transform: translateY(-10px);
+}
+
+.services .service-card i {
+    font-size: 3em;
+    color: #2575fc;
+    margin-bottom: 1em;
+}
+
+.services .service-card h3 {
+    font-size: 1.8em;
+    color: #6a11cb;
+    margin-bottom: 1em;
+}
+
+.services .service-card p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* About Section */
+.about {
+    padding: 4em 1em;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.about h2 {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #6a11cb;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+.about .button {
+    background: #2575fc;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.about .button:hover {
+    background: #6a11cb;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4em 1em;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 3em;
+}
+
+.contact h2 {
     margin-bottom: 1em;
     font-size: 2.5em;
     color: #ffcc00;
 }
 
-.testimonials .testimonial {
-    margin: 1.5em 0;
-    padding: 2em;
-    background: #fff;
-    color: #333;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    display: inline-block;
-    width: calc(33% - 2em);
-    text-align: left;
-}
-
-.testimonials .testimonial p {
-    font-size: 1.1em;
-    margin-bottom: 0.5em;
-}
-
-.testimonials .testimonial .author {
-    margin-top: 0.5em;
-    font-weight: bold;
-    color: #2575fc;
-}
-
-/* Newsletter Section */
-.newsletter {
-    padding: 2em;
-    background: linear-gradient(135deg, #2575fc, #6a11cb);
-    color: #fff;
-    text-align: center;
-    border-radius: 20px;
-    margin: 2em auto;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.newsletter h2 {
-    font-size: 2.5em;
-    margin-bottom: 1em;
-}
-
-.newsletter form {
+.contact form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 1em;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.newsletter input {
-    padding: 0.8em;
+.contact input, .contact textarea {
+    padding: 1em;
     border: none;
-    border-radius: 20px;
-    flex: 1;
+    border-radius: 10px;
     font-size: 1.1em;
+    color: #333;
 }
 
-.newsletter button {
-    padding: 0.8em 1.5em;
+.contact button {
     background: #ffcc00;
     color: #6a11cb;
-    border: none;
-    border-radius: 20px;
-    font-size: 1.1em;
-    cursor: pointer;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
     transition: background 0.3s;
+    cursor: pointer;
 }
 
-.newsletter button:hover {
+.contact button:hover {
     background: #333;
     color: #fff;
 }
@@ -242,7 +275,7 @@ footer {
     padding: 1.5em 0;
     background: #222;
     color: #fff;
-    margin-top: 2em;
+    margin-top: 3em;
     border-radius: 20px 20px 0 0;
 }
 
@@ -268,4 +301,3 @@ footer {
         transform: translateY(0);
     }
 }
-
