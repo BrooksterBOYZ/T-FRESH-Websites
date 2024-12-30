@@ -6,6 +6,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 /* Header and Navigation */
@@ -13,6 +14,9 @@ header {
     background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: #fff;
     padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -58,11 +62,13 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
+    animation: fadeInDown 1s ease-out;
 }
 
 .hero p {
     font-size: 1.2em;
     margin-bottom: 1.5em;
+    animation: fadeInUp 1s ease-out;
 }
 
 .hero .button {
@@ -80,93 +86,166 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Content Sections */
-section {
-    margin: 2em auto;
-    padding: 2em;
-    background: #fff;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+/* Pricing Section */
+.pricing {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-section h2 {
+.pricing-card {
+    background: #fff;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 2em);
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card h3 {
+    font-size: 1.5em;
+    color: #6a11cb;
+    margin-bottom: 1em;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.pricing-card ul li {
+    margin-bottom: 0.5em;
+}
+
+.pricing-card .price {
+    font-size: 2em;
+    color: #b91d73;
+    margin-bottom: 1em;
+}
+
+.pricing-card .button {
+    padding: 0.8em 1.5em;
+    background: #2575fc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.pricing-card .button:hover {
+    background: #6a11cb;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4em 1em;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 20px;
+    margin: 2em auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.testimonials h2 {
     margin-bottom: 1em;
     font-size: 2em;
     color: #6a11cb;
 }
 
-section ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-section ul li {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
+.testimonials .testimonial {
+    margin: 1em 0;
     padding: 1em;
+    background: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    text-align: center;
-    flex: 1 1 calc(25% - 1em);
-    max-width: calc(25% - 1em);
 }
 
-section ul li:hover {
-    transform: translateY(-10px);
-}
-
-section ul li p {
+.testimonials .testimonial p {
     font-size: 1.1em;
-    margin: 0.5em 0 0;
 }
 
-/* Contact Form */
-form {
+.testimonials .testimonial .author {
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #2575fc;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 2em;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin: 2em auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.newsletter h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.newsletter form {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 1em;
 }
 
-form input, form textarea, form button {
-    padding: 1em;
-    border-radius: 15px;
-    border: 1px solid #ddd;
-    font-size: 1em;
-}
-
-form input:focus, form textarea:focus {
-    outline: none;
-    border-color: #6a11cb;
-}
-
-form button {
-    background: linear-gradient(135deg, #f953c6, #b91d73);
-    color: #fff;
+.newsletter input {
+    padding: 0.8em;
     border: none;
-    font-size: 1.1em;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.newsletter button {
+    padding: 0.8em 1.5em;
+    background: #ffcc00;
+    color: #6a11cb;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-form button:hover {
+.newsletter button:hover {
     background: #333;
+    color: #fff;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1.5em 0;
-    background: #222;
-    color: #fff;
-    margin-top: 2em;
-    border-radius: 20px 20px 0 0;
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
