@@ -86,54 +86,156 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Why Choose Us Section */
-.why-choose-us {
+/* Pricing Section */
+.pricing {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 2em;
+    margin-top: 3em;
     padding: 4em 1em;
     background-color: #fff;
-    margin-top: 3em;
 }
 
-.why-choose-us h2 {
-    font-size: 2.5em;
-    color: #6a11cb;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 2em;
-}
-
-.why-choose-us .feature {
-    background: #f9f9f9;
-    border-radius: 15px;
+.pricing-card {
+    background: #fff;
     padding: 2em;
-    width: calc(33% - 2em);
-    margin: 1em;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-.why-choose-us .feature:hover {
+.pricing-card:hover {
     transform: translateY(-10px);
 }
 
-.why-choose-us .feature i {
-    font-size: 3em;
-    color: #2575fc;
-    margin-bottom: 1em;
-}
-
-.why-choose-us .feature h3 {
-    font-size: 1.8em;
+.pricing-card h3 {
+    font-size: 2em;
     color: #6a11cb;
     margin-bottom: 1em;
 }
 
-.why-choose-us .feature p {
+.pricing-card .price {
+    font-size: 2.5em;
+    color: #b91d73;
+    margin-bottom: 1em;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-card ul li {
+    margin-bottom: 0.5em;
     font-size: 1.1em;
-    color: #333;
+}
+
+.pricing-card .button {
+    background: #2575fc;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.pricing-card .button:hover {
+    background: #6a11cb;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4em 1em;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 3em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials h2 {
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+    margin: 1em;
+}
+
+.testimonial p {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: #2575fc;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 4em 1em;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: #fff;
+    text-align: center;
+    margin-top: 3em;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    padding: 1em;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1em;
+    width: 100%;
+    max-width: 500px;
+}
+
+.newsletter button {
+    padding: 1em 2em;
+    background: #ffcc00;
+    color: #6a11cb;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter button:hover {
+    background: #333;
+    color: #fff;
 }
 
 /* Services Section */
@@ -144,6 +246,9 @@ nav ul li a:hover {
     text-align: center;
     border-radius: 20px;
     margin-top: 3em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .services h2 {
@@ -152,36 +257,35 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-.services .service-card {
-    display: inline-block;
+.service-card {
     background: #fff;
     color: #333;
     width: calc(33% - 2em);
     margin: 1em;
     padding: 2em;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
 
-.services .service-card:hover {
+.service-card:hover {
     transform: translateY(-10px);
 }
 
-.services .service-card i {
+.service-card i {
     font-size: 3em;
     color: #2575fc;
     margin-bottom: 1em;
 }
 
-.services .service-card h3 {
+.service-card h3 {
     font-size: 1.8em;
     color: #6a11cb;
     margin-bottom: 1em;
 }
 
-.services .service-card p {
+.service-card p {
     font-size: 1.1em;
     color: #333;
 }
@@ -193,10 +297,13 @@ nav ul li a:hover {
     color: #333;
     text-align: center;
     margin-top: 3em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about h2 {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     font-size: 2.5em;
     color: #6a11cb;
 }
@@ -229,10 +336,13 @@ nav ul li a:hover {
     text-align: center;
     border-radius: 20px;
     margin-top: 3em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact h2 {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     font-size: 2.5em;
     color: #ffcc00;
 }
@@ -248,56 +358,23 @@ nav ul li a:hover {
 .contact input, .contact textarea {
     padding: 1em;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 1.1em;
-    color: #333;
+    width: 100%;
 }
 
 .contact button {
+    padding: 1em 2em;
     background: #ffcc00;
-    color: #6a11cb;
-    padding: 0.8em 1.5em;
-    text-decoration: none;
+    color: #2575fc;
+    border: none;
     border-radius: 30px;
-    font-weight: bold;
-    transition: background 0.3s;
+    font-size: 1.1em;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .contact button:hover {
-    background: #333;
+    background: #2575fc;
     color: #fff;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1.5em 0;
-    background: #222;
-    color: #fff;
-    margin-top: 3em;
-    border-radius: 20px 20px 0 0;
-}
-
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
