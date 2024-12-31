@@ -6,6 +6,43 @@
     <meta name="description" content="Learn more about T-Fresh Websites, founded by Brooks Tafreshi to create modern, responsive, and user-friendly websites for businesses worldwide.">
     <title>About Us - T-Fresh Websites</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles for the boxes section */
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 40px 0;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #f2f2f2;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #04a9f4;
+        }
+
+        .box p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -32,6 +69,22 @@
                 Our mission is to transform your ideas into functional and visually stunning 
                 digital experiences.
             </p>
+        </section>
+
+        <!-- Boxes Section -->
+        <section class="boxes">
+            <div class="box">
+                <h3>Our Mission</h3>
+                <p>To empower businesses with cutting-edge web solutions that stand out and deliver results.</p>
+            </div>
+            <div class="box">
+                <h3>Our Vision</h3>
+                <p>Building a world where every business can thrive online with a strong digital presence.</p>
+            </div>
+            <div class="box">
+                <h3>Our Values</h3>
+                <p>Creativity, innovation, and customer-centric design are at the heart of what we do.</p>
+            </div>
         </section>
     </main>
 
