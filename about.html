@@ -7,40 +7,35 @@
     <title>About Us - T-Fresh Websites</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Styles for the boxes section */
-        .boxes {
+        body {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin: 40px 0;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .about {
+            text-align: center;
+            margin: 40px auto;
             padding: 20px;
         }
 
-        .box {
+        .about-description {
             background-color: #f2f2f2;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-            width: 300px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 800px;
         }
 
-        .box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .box h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #04a9f4;
-        }
-
-        .box p {
-            font-size: 16px;
+        .about-description p {
+            font-size: 18px;
             color: #555;
+            margin: 0;
         }
     </style>
 </head>
@@ -60,30 +55,15 @@
 
     <!-- Main Content -->
     <main>
-        <!-- About Section -->
         <section class="about" aria-labelledby="about-title">
             <h2 id="about-title">About Us</h2>
-            <p>
-                Founded in 2024 by Brooks Tafreshi, T-Fresh Websites is dedicated to delivering 
-                modern, responsive, and user-friendly websites for businesses around the globe. 
-                Our mission is to transform your ideas into functional and visually stunning 
-                digital experiences.
-            </p>
-        </section>
-
-        <!-- Boxes Section -->
-        <section class="boxes">
-            <div class="box">
-                <h3>Our Mission</h3>
-                <p>To empower businesses with cutting-edge web solutions that stand out and deliver results.</p>
-            </div>
-            <div class="box">
-                <h3>Our Vision</h3>
-                <p>Building a world where every business can thrive online with a strong digital presence.</p>
-            </div>
-            <div class="box">
-                <h3>Our Values</h3>
-                <p>Creativity, innovation, and customer-centric design are at the heart of what we do.</p>
+            <div class="about-description">
+                <p>
+                    Founded in 2024 by Brooks Tafreshi, T-Fresh Websites is dedicated to delivering 
+                    modern, responsive, and user-friendly websites for businesses around the globe. 
+                    Our mission is to transform your ideas into functional and visually stunning 
+                    digital experiences.
+                </p>
             </div>
         </section>
     </main>
