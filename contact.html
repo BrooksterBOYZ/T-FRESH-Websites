@@ -3,92 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact T-Fresh Websites for inquiries about our services, pricing, and custom solutions.">
     <title>Contact Us - T-Fresh Websites</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        main {
-            flex: 1;
-        }
-
-        .contact {
-            text-align: center;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .contact-boxes {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .contact-box {
-            background-color: #f2f2f2;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 300px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: left;
-        }
-
-        .contact-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .contact-box h3 {
-            font-size: 20px;
-            margin-bottom: 15px;
-            color: #04a9f4;
-        }
-
-        .contact-box p {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 10px;
-        }
-
-        .contact-box input, 
-        .contact-box textarea, 
-        .contact-box button {
-            display: block;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        .contact-box input, .contact-box textarea {
-            padding: 10px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-
-        .contact-box button {
-            background-color: #04a9f4;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .contact-box button:hover {
-            background-color: #027bb5;
-        }
-    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <nav>
             <a href="index.html" class="logo">T-Fresh Websites</a>
@@ -100,37 +19,32 @@
             </ul>
         </nav>
     </header>
-
-    <!-- Main Content -->
     <main>
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-boxes">
-                <div class="contact-box">
-                    <h3>Get in Touch</h3>
-                    <p>Fill out the form below to reach us.</p>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea rows="4" placeholder="Your Message"></textarea>
-                    <button>Send Message</button>
-                </div>
-                <div class="contact-box">
-                    <h3>Contact Details</h3>
-                    <p>Email: support@tfreshwebsites.com</p>
-                    <p>Phone: +1 (555) 123-4567</p>
-                    <p>Address: 123 Web Design Lane, Creativity City, USA</p>
-                </div>
-            </div>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Fill out the form below or reach out via email.</p>
+        </section>
+        <section class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
-
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 T-Fresh Websites | All Rights Reserved</p>
-        <p>
+        <div class="footer-links">
             <a href="privacy-policy.html">Privacy Policy</a> |
-            <a href="terms-of-service.html">Terms of Service</a>
-        </p>
+            <a href="terms-of-service.html">Terms of Service</a> |
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+        </div>
     </footer>
 </body>
 </html>
