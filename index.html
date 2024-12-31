@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="T-Fresh Websites provides modern, responsive web design solutions to help your business stand out online.">
     <title>Home - T-Fresh Websites</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="index.html" class="logo" aria-current="page">T-Fresh Websites</a>
             <ul>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html" aria-label="View our services">Services</a></li>
+                <li><a href="pricing.html" aria-label="See our pricing plans">Pricing</a></li>
+                <li><a href="testimonials.html" aria-label="Read client testimonials">Testimonials</a></li>
+                <li><a href="about.html" aria-label="Learn more about us">About</a></li>
+                <li><a href="contact.html" aria-label="Get in touch with us">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
     <main>
-        <section class="hero">
-            <h1>Welcome to T-Fresh Websites</h1>
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">Welcome to T-Fresh Websites</h1>
             <p>Your one-stop solution for modern and responsive web design.</p>
-            <a href="services.html" class="cta-btn">Explore Our Services</a>
+            <a href="services.html" class="cta-btn" aria-label="Explore our services page">Explore Our Services</a>
         </section>
     </main>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 T-Fresh Websites | All Rights Reserved</p>
+        <p>
+            <a href="privacy-policy.html" aria-label="Read our privacy policy">Privacy Policy</a> |
+            <a href="terms-of-service.html" aria-label="View our terms of service">Terms of Service</a>
+        </p>
     </footer>
 </body>
 </html>
