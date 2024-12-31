@@ -1,182 +1,78 @@
+<!-- Updated About Page (about.html) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about T-Fresh Websites, founded by Brooks Tafreshi to create modern, responsive, and user-friendly websites for businesses worldwide.">
+    <meta name="description" content="Learn more about T-Fresh Websites - Our mission, values, and team.">
     <title>About Us - T-Fresh Websites</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        main {
-            flex: 1;
-        }
-
-        .about-section {
-            text-align: center;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .main-box {
-            background-color: #f2f2f2;
-            border-radius: 15px;
-            padding: 40px;
-            margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .main-box h2 {
-            color: #04a9f4;
-        }
-
-        .main-box p {
-            font-size: 18px;
-            color: #555;
-            margin: 0;
-        }
-
-        .sub-boxes {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        .sub-box {
-            background-color: #f9f9f9;
-            border-radius: 15px;
-            padding: 20px;
-            width: 300px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .sub-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .sub-box h3 {
-            color: #04a9f4;
-            margin-bottom: 15px;
-        }
-
-        .sub-box p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        footer {
-            background-color: #2d3a3f;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer .footer-links {
-            margin: 15px 0;
-        }
-
-        footer .footer-links a {
-            color: #04a9f4;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 14px;
-        }
-
-        footer .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        footer .social-icons {
-            margin-top: 15px;
-        }
-
-        footer .social-icons a {
-            margin: 0 10px;
-            font-size: 18px;
-            color: #04a9f4;
-            transition: color 0.3s ease;
-        }
-
-        footer .social-icons a:hover {
-            color: #f9a825;
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <nav aria-label="Main navigation">
-            <a href="index.html" class="logo" aria-label="Go to T-Fresh Websites homepage">T-Fresh Websites</a>
+        <nav>
+            <a href="index.html" class="logo">T-Fresh Websites</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                 <li><a href="pricing.html">Pricing</a></li>
-                 <li><a href="Testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
+    <!-- About Section -->
     <main>
-        <section class="about-section" aria-labelledby="about-title">
-            <div class="main-box">
-                <h2 id="about-title">About Our Business</h2>
-                <p>
-                    Founded in 2024 by Brooks Tafreshi, T-Fresh Websites aims to provide businesses 
-                    with cutting-edge, responsive, and visually stunning websites. Our mission is to 
-                    transform your ideas into powerful online presences that deliver results.
-                </p>
+        <section class="about-hero">
+            <h1>About T-Fresh Websites</h1>
+            <p>Transforming ideas into stunning digital experiences since 2024.</p>
+        </section>
+
+        <!-- About Content -->
+        <section class="about-content">
+            <div class="about-boxes">
+                <div class="about-box">
+                    <h3>Our Mission</h3>
+                    <p>To deliver innovative and user-friendly web designs that empower businesses worldwide.</p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Values</h3>
+                    <p>Creativity, responsiveness, and excellence are at the core of everything we do.</p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Team</h3>
+                    <p>A passionate group of designers, developers, and strategists dedicated to your success.</p>
+                </div>
             </div>
-            <div class="sub-boxes">
-                <div class="sub-box">
-                    <h3>Modern Design</h3>
-                    <p>
-                        We specialize in crafting sleek, contemporary designs that ensure your website 
-                        stands out in today’s digital landscape.
-                    </p>
-                </div>
-                <div class="sub-box">
-                    <h3>Responsive Development</h3>
-                    <p>
-                        Our websites look and function beautifully on any device, from desktops to smartphones.
-                    </p>
-                </div>
-                <div class="sub-box">
-                    <h3>Customer Focused</h3>
-                    <p>
-                        We collaborate closely with clients to bring their visions to life with personalized 
-                        attention and expertise.
-                    </p>
-                </div>
+
+            <!-- Highlight Section -->
+            <div class="about-highlight">
+                <h2>Why Choose T-Fresh Websites?</h2>
+                <p>With years of experience and a customer-first approach, we turn visions into reality, one website at a time.</p>
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 T-Fresh Websites | All Rights Reserved</p>
-        <div class="footer-links">
-            <a href="privacy-policy.html">Privacy Policy</a> |
-            <a href="terms-of-service.html">Terms of Service</a> |
-            <a href="sitemap.html">Sitemap</a>
-        </div>
-        <div class="social-icons">
-            <a href="https://facebook.com" aria-label="Visit us on Facebook">Facebook</a>
-            <a href="https://twitter.com" aria-label="Visit us on Twitter">Twitter</a>
-            <a href="https://linkedin.com" aria-label="Visit us on LinkedIn">LinkedIn</a>
+        <div class="footer-content">
+            <p>&copy; 2024 T-Fresh Websites | All Rights Reserved</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
         </div>
     </footer>
+
+    <!-- Back-to-Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 </body>
 </html>
+
+<!-- Additional Pages Follow the Same Modern Design Style -->
